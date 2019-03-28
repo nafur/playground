@@ -6,6 +6,7 @@
 custom_mark10
   digraph G {
     host [shape=box];
+    { rank = same; http; https; }
     host -> http [label="80"];
     host -> https [label="443"];
     http -> certbot;
