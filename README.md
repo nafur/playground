@@ -13,6 +13,8 @@ custom_mark10
     mysql;
     phpmyadmin -> mysql [label="3306"];
     https -> phpmyadmin;
+    ldap;
+    lam -> ldap;
   }
 custom_mark10
 </details>
