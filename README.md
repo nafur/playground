@@ -16,6 +16,7 @@ custom_mark10
     https -> phpmyadmin;
     ldap;
     lam -> ldap;
+    https -> lam;
   }
 custom_mark10
 </details>
