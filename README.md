@@ -6,10 +6,13 @@
 custom_mark10
   digraph G {
     host [shape=box];
-    host -> http [80];
-    host -> https [443];
+    host -> http [label="80"];
+    host -> https [label="443"];
     http -> certbot;
     certbot -> https;
+    mysql;
+    phpmyadmin -> mysql [label="3306"];
+    https -> phpmyadmin;
   }
 custom_mark10
 </details>
